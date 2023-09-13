@@ -82,6 +82,8 @@ test_env_vars = {
   'LD_LIBRARY_PATH': join_paths(meson.current_build_dir(), 'src'),
 }
 
+interface_src_dir = join_paths(meson.current_source_dir(), 'interface')
+
 subdir('interface')
 subdir('src')
 subdir('tests')
